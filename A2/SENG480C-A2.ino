@@ -11,6 +11,7 @@ float Vout = 0;
 float R1 = 2000;
 float R2 = 0;
 float buffer = 0;
+float energies[11] = {1.995262e12, 2.818383e12, 3.981072e12, 5.623413e12, 7.943282e12, 1.122018e13, 1.584893e13, 2.238721e13, 3.162278e13, 4.466836e13, 6.309573e13};
 // Wiring:
 // Pin 8 to IN1 on the ULN2003 driver
 // Pin 9 to IN2 on the ULN2003 driver
@@ -27,7 +28,6 @@ void setup() {
 }
 
 void loop() {  
-    Serial.println("Loop");
   // Ohm Meter Code:
    resVal = analogRead(analogPin);
   if(resVal){
@@ -38,7 +38,9 @@ void loop() {
     int magnitudeIndex = getEnergyIndex();
     Serial.print("Magnitude: ");
     Serial.println(5 + 0.1 * magnitudeIndex);
-    // Set motor speed
+    float speed =  energies[magnitudeIndex] / energies[10] * 15;
+    myStepper.setSpeed(speed);
+    Serial.println(speed);
     Serial.print("Resistance: ");
     Serial.println(R2);
   } else {
@@ -60,8 +62,11 @@ int getEnergyIndex() {
   if(R2 <= 275) {
     return 3;
   }
-  if(R2 <= 505) {
+  if(R2 <= 400) {
     return 4;
+  }
+  if(R2 <= 575) {
+    return 9;
   }
   if(R2 <= 840) {
     return 5;
@@ -74,9 +79,6 @@ int getEnergyIndex() {
   }
   if(R2 <= 7500) {
     return 8;
-  }
-  if(R2 <= 50000) {
-    return 9;
   }
   if(R2 <= 200000) {
     return 10;
