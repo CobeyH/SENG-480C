@@ -6,6 +6,7 @@ using ArucoUnity.Objects.Trackers;
 using UnityEngine.Timeline;
 using UnityEngine.Playables;
 
+#if UNITY_EDITOR
 using UnityEditor.Timeline;
 using UnityEditor;
 
@@ -20,64 +21,6 @@ public class ArucoToTimeline : MonoBehaviour
     [SerializeField] private double timestep = 1.0 / 60.0;
 
     private Dictionary<AnimationClip, TransformCurves> clipCurves;
-
-    private struct TransformCurves
-    {
-        public AnimationCurve px, py, pz, rx, ry, rz;
-        public TransformCurves(AnimationClip clip)
-        {
-            px = null; py = null; pz = null; rx = null; ry = null; rz = null;
-
-            var bindings = AnimationUtility.GetCurveBindings(clip);
-            foreach (var binding in bindings)
-            {
-                switch (binding.propertyName)
-                {
-                    case "position.x":
-                        px = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-
-                    case "position.y":
-                        py = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-
-                    case "position.z":
-                        pz = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-
-                    case "rotation.x":
-                        rx = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-
-                    case "rotation.y":
-                        ry = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-
-                    case "rotation.z":
-                        rz = AnimationUtility.GetEditorCurve(clip, binding);
-                        break;
-                }
-            }
-
-            if (px == null)
-                px = new AnimationCurve();
-
-            if (py == null)
-                py = new AnimationCurve();
-
-            if (pz == null)
-                pz = new AnimationCurve();
-
-            if (rx == null)
-                rx = new AnimationCurve();
-
-            if (ry == null)
-                ry = new AnimationCurve();
-
-            if (rz == null)
-                rz = new AnimationCurve();
-        }
-    }
 
     private void Reset()
     {
@@ -204,7 +147,6 @@ public class ArucoToTimeline : MonoBehaviour
                             AssetDatabase.CreateFolder("Assets/Clips", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
                         AssetDatabase.CreateAsset(clip.animationClip, $"Assets/Clips/{UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}/{obj.gameObject.name}.asset");
-                        //   clip.animationClip.legacy = true;
                     }
                     else
                     {
@@ -258,7 +200,6 @@ public class ArucoToTimeline : MonoBehaviour
 
 }
 
-#if UNITY_EDITOR
 [CustomEditor(typeof(ArucoToTimeline))]
 public class ArucoToTimeline_Editor : Editor
 {
