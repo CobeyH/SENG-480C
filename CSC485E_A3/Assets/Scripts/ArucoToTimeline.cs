@@ -63,6 +63,11 @@ public class ArucoToTimeline : MonoBehaviour
         }
     }
 
+    public void UpdateTimeline(float normalized_position)
+    {
+        playableDirector.time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
+    }
+
     public void CreateTracks()
     {
         if (arucoTracks == null)
