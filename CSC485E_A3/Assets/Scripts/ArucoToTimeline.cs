@@ -24,13 +24,10 @@ public class ArucoToTimeline : MonoBehaviour
 
     private void Reset()
     {
-        playableDirector = GetComponent<PlayableDirector>();
         tracker = FindObjectOfType<ArucoObjectsTracker>();
-    }
+        playableDirector = GetComponent<PlayableDirector>();
 
-    private void OnValidate()
-    {
-        if (playableDirector.playableAsset != null)
+        if (playableDirector != null && playableDirector.playableAsset != null)
             timelineAsset = playableDirector.playableAsset as TimelineAsset;
     }
 
@@ -42,12 +39,14 @@ public class ArucoToTimeline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //todo: replace with hardware button
         if (Input.GetKeyDown(KeyCode.Space))
         {
             InsertKeyframes();
             TimelineEditor.Refresh(RefreshReason.ContentsModified);
         }
 
+        //todo: replace with ultrasonic
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             playableDirector.time -= timestep;
@@ -93,8 +92,8 @@ public class ArucoToTimeline : MonoBehaviour
                     track = t;
                     break;
                 }
-
             }
+
             if (track == null)
             {
                 string[] split = obj.gameObject.name.Split('_');
