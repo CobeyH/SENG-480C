@@ -1056,6 +1056,7 @@ GameObject:
   - component: {fileID: 165575424}
   - component: {fileID: 165575423}
   - component: {fileID: 165575422}
+  - component: {fileID: 165575425}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_2
   m_TagString: Untagged
@@ -1108,6 +1109,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &165575425
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165575421}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &237216543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1140,6 @@ GameObject:
   - component: {fileID: 237216547}
   - component: {fileID: 237216546}
   - component: {fileID: 237216545}
-  - component: {fileID: 237216548}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1205,25 +1224,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237216543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &237216548
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237216543}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &241748885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,6 +2018,7 @@ GameObject:
   - component: {fileID: 422904917}
   - component: {fileID: 422904916}
   - component: {fileID: 422904915}
+  - component: {fileID: 422904918}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_13
   m_TagString: Untagged
@@ -2070,6 +2071,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &422904918
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422904914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &430882992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2231,7 @@ GameObject:
   - component: {fileID: 435664677}
   - component: {fileID: 435664676}
   - component: {fileID: 435664675}
+  - component: {fileID: 435664678}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_3
   m_TagString: Untagged
@@ -2263,6 +2284,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &435664678
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435664674}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &437432848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +3966,7 @@ GameObject:
   - component: {fileID: 727633590}
   - component: {fileID: 727633589}
   - component: {fileID: 727633588}
+  - component: {fileID: 727633591}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_15
   m_TagString: Untagged
@@ -3978,6 +4019,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &727633591
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727633587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &739589396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4602,7 @@ GameObject:
   - component: {fileID: 850930965}
   - component: {fileID: 850930964}
   - component: {fileID: 850930963}
+  - component: {fileID: 850930966}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_8
   m_TagString: Untagged
@@ -4594,6 +4655,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &850930966
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850930962}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &872622254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +4877,7 @@ GameObject:
   - component: {fileID: 887812764}
   - component: {fileID: 887812763}
   - component: {fileID: 887812765}
+  - component: {fileID: 887812766}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_0
   m_TagString: Untagged
@@ -4849,6 +4930,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arucoObject: {fileID: 887812763}
   displayInPlayMode: 1
+--- !u!95 &887812766
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887812762}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &892550921
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,6 +5109,10 @@ PrefabInstance:
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
       propertyPath: arucoObjects.Array.data[0]
       value: 
       objectReference: {fileID: 887812763}
@@ -5074,6 +5178,70 @@ PrefabInstance:
       objectReference: {fileID: 2134252184}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
       propertyPath: arucoObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 727633589}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 887812763}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1317892596}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 165575423}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 435664676}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2111134443}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 1834445155}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 1560668701}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[7]
+      value: 
+      objectReference: {fileID: 1256100469}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[8]
+      value: 
+      objectReference: {fileID: 850930964}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[9]
+      value: 
+      objectReference: {fileID: 1249993777}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[10]
+      value: 
+      objectReference: {fileID: 1309321949}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[11]
+      value: 
+      objectReference: {fileID: 1245409069}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[12]
+      value: 
+      objectReference: {fileID: 1619882963}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[13]
+      value: 
+      objectReference: {fileID: 422904916}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[14]
+      value: 
+      objectReference: {fileID: 2134252184}
+    - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5, type: 3}
+      propertyPath: m_arucoObjects.Array.data[15]
       value: 
       objectReference: {fileID: 727633589}
     m_RemovedComponents: []
@@ -6547,6 +6715,7 @@ GameObject:
   - component: {fileID: 1245409070}
   - component: {fileID: 1245409069}
   - component: {fileID: 1245409068}
+  - component: {fileID: 1245409071}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_11
   m_TagString: Untagged
@@ -6599,6 +6768,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1245409071
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245409067}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1249993775
 GameObject:
   m_ObjectHideFlags: 0
@@ -6610,6 +6798,7 @@ GameObject:
   - component: {fileID: 1249993778}
   - component: {fileID: 1249993777}
   - component: {fileID: 1249993776}
+  - component: {fileID: 1249993779}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_9
   m_TagString: Untagged
@@ -6662,6 +6851,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1249993779
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249993775}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1252081925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,6 +6915,7 @@ GameObject:
   - component: {fileID: 1256100470}
   - component: {fileID: 1256100469}
   - component: {fileID: 1256100468}
+  - component: {fileID: 1256100471}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_7
   m_TagString: Untagged
@@ -6759,6 +6968,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1256100471
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256100467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1281579731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6866,6 +7094,7 @@ GameObject:
   - component: {fileID: 1309321950}
   - component: {fileID: 1309321949}
   - component: {fileID: 1309321948}
+  - component: {fileID: 1309321951}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_10
   m_TagString: Untagged
@@ -6918,6 +7147,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1309321951
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309321947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1317892594
 GameObject:
   m_ObjectHideFlags: 0
@@ -6929,6 +7177,7 @@ GameObject:
   - component: {fileID: 1317892597}
   - component: {fileID: 1317892596}
   - component: {fileID: 1317892595}
+  - component: {fileID: 1317892598}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_1
   m_TagString: Untagged
@@ -6981,6 +7230,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1317892598
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317892594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1335270021
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,6 +8135,7 @@ GameObject:
   - component: {fileID: 1560668702}
   - component: {fileID: 1560668701}
   - component: {fileID: 1560668700}
+  - component: {fileID: 1560668703}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_6
   m_TagString: Untagged
@@ -7919,6 +8188,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1560668703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560668699}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1619882961
 GameObject:
   m_ObjectHideFlags: 0
@@ -7930,6 +8218,7 @@ GameObject:
   - component: {fileID: 1619882964}
   - component: {fileID: 1619882963}
   - component: {fileID: 1619882962}
+  - component: {fileID: 1619882965}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_12
   m_TagString: Untagged
@@ -7982,6 +8271,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1619882965
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619882961}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1641684317
 GameObject:
   m_ObjectHideFlags: 0
@@ -9074,6 +9382,7 @@ GameObject:
   - component: {fileID: 1834445156}
   - component: {fileID: 1834445155}
   - component: {fileID: 1834445154}
+  - component: {fileID: 1834445157}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_5
   m_TagString: Untagged
@@ -9126,6 +9435,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1834445157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834445153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1911135510
 GameObject:
   m_ObjectHideFlags: 0
@@ -9842,8 +10170,24 @@ MonoBehaviour:
   playableDirector: {fileID: 2082523163}
   timelineAsset: {fileID: 11400000, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
   arucoTracks:
-    m_keys: 
-    m_values: []
+    m_keys: 924000006e410000063f00007e3f0000b642000054420000d24100005441000076400000484100006641000040410000da410000683f0000dc42000034400000
+    m_values:
+    - {fileID: -27082607404915007, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 2650585809127795219, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 1872529493881430099, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -8565065160252802782, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 5184721596483456735, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 2546414619113368895, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -7667129803384264473, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 8163568597344896388, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -2476460794991229746, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 1518650344473268935, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -5223345279084248679, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 6541037383192226586, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 4947047027214451489, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -5162630546419176958, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 8053341266525028898, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -8715388685248490421, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
 --- !u!320 &2082523163
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -9860,37 +10204,37 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -27082607404915007, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 887812762}
   - key: {fileID: 2650585809127795219, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1317892594}
   - key: {fileID: 1872529493881430099, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 165575421}
   - key: {fileID: -8565065160252802782, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 435664674}
   - key: {fileID: 5184721596483456735, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 2111134441}
   - key: {fileID: 2546414619113368895, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1834445153}
   - key: {fileID: -7667129803384264473, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1560668699}
   - key: {fileID: 8163568597344896388, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1256100467}
   - key: {fileID: -2476460794991229746, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 850930962}
   - key: {fileID: 1518650344473268935, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1249993775}
   - key: {fileID: -5223345279084248679, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1309321947}
   - key: {fileID: 6541037383192226586, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1245409067}
   - key: {fileID: 4947047027214451489, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1619882961}
   - key: {fileID: -5162630546419176958, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 422904914}
   - key: {fileID: 8053341266525028898, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 2134252182}
   - key: {fileID: -8715388685248490421, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 727633587}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2082523164
@@ -10014,6 +10358,7 @@ GameObject:
   - component: {fileID: 2111134444}
   - component: {fileID: 2111134443}
   - component: {fileID: 2111134442}
+  - component: {fileID: 2111134445}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_4
   m_TagString: Untagged
@@ -10066,6 +10411,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2111134445
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111134441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2112529567
 GameObject:
   m_ObjectHideFlags: 0
@@ -10363,6 +10727,7 @@ GameObject:
   - component: {fileID: 2134252185}
   - component: {fileID: 2134252184}
   - component: {fileID: 2134252183}
+  - component: {fileID: 2134252186}
   m_Layer: 0
   m_Name: Marker_Dict4x4_50_Id_14
   m_TagString: Untagged
@@ -10415,3 +10780,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2134252186
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134252182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -5,16 +5,17 @@ using System;
 
 namespace ArucoUnity.Objects.Trackers
 {
-  /// <summary>
-  /// Manages a list of <see cref="ArucoObject"/> to detect for a <see cref="ArucoCamera"/> camera system.
-  /// </summary>
-  public abstract class ArucoObjectsController : ArucoObjectDetector, IArucoObjectsController
-  {
-    // Editor fields
+    /// <summary>
+    /// Manages a list of <see cref="ArucoObject"/> to detect for a <see cref="ArucoCamera"/> camera system.
+    /// </summary>
+    public abstract class ArucoObjectsController : ArucoObjectDetector, IArucoObjectsController
+    {
+        // Editor fields
 
-    [SerializeField]
-    [Tooltip("The list of the ArUco objects to detect.")]
-    private ArucoObject[] arucoObjects;
+        [SerializeField]
+        [Tooltip("The list of the ArUco objects to detect.")]
+        private ArucoObject[] m_arucoObjects;
+        public ArucoObject[] arucoObjectsToDetect { get { return m_arucoObjects; } }
 
     // IArucoObjectsController events
 
@@ -39,11 +40,11 @@ namespace ArucoUnity.Objects.Trackers
     }
 
     /// <summary>
-    /// Adds to the <see cref="ArucoObjects"/> list the ArUco objects added from the editor field array <see cref="arucoObjects"/>.
+    /// Adds to the <see cref="ArucoObjects"/> list the ArUco objects added from the editor field array <see cref="m_arucoObjects"/>.
     /// </summary>
     protected override void Start()
     {
-      foreach (ArucoObject arucoObject in arucoObjects)
+      foreach (ArucoObject arucoObject in m_arucoObjects)
       {
         AddArucoObject(arucoObject);
       }
