@@ -10172,22 +10172,22 @@ MonoBehaviour:
   arucoTracks:
     m_keys: 924000006e410000063f00007e3f0000b642000054420000d24100005441000076400000484100006641000040410000da410000683f0000dc42000034400000
     m_values:
-    - {fileID: -27082607404915007, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 2650585809127795219, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 1872529493881430099, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -8565065160252802782, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 5184721596483456735, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 2546414619113368895, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -7667129803384264473, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 8163568597344896388, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -2476460794991229746, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 1518650344473268935, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -5223345279084248679, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 6541037383192226586, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 4947047027214451489, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -5162630546419176958, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: 8053341266525028898, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    - {fileID: -8715388685248490421, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
 --- !u!320 &2082523163
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -10202,39 +10202,7 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -27082607404915007, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 887812762}
-  - key: {fileID: 2650585809127795219, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1317892594}
-  - key: {fileID: 1872529493881430099, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 165575421}
-  - key: {fileID: -8565065160252802782, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 435664674}
-  - key: {fileID: 5184721596483456735, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 2111134441}
-  - key: {fileID: 2546414619113368895, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1834445153}
-  - key: {fileID: -7667129803384264473, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1560668699}
-  - key: {fileID: 8163568597344896388, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1256100467}
-  - key: {fileID: -2476460794991229746, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 850930962}
-  - key: {fileID: 1518650344473268935, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1249993775}
-  - key: {fileID: -5223345279084248679, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1309321947}
-  - key: {fileID: 6541037383192226586, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1245409067}
-  - key: {fileID: 4947047027214451489, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 1619882961}
-  - key: {fileID: -5162630546419176958, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 422904914}
-  - key: {fileID: 8053341266525028898, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 2134252182}
-  - key: {fileID: -8715388685248490421, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 727633587}
+  m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2082523164

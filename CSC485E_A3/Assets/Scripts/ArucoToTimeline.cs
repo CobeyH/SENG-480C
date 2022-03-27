@@ -135,7 +135,9 @@ public class ArucoToTimeline : MonoBehaviour
             }
             if (track == null)
             {
-                track = timelineAsset.CreateTrack(typeof(AnimationTrack), null, obj.gameObject.name);
+                string[] split = obj.gameObject.name.Split('_');
+            
+                track = timelineAsset.CreateTrack(typeof(AnimationTrack), null, $"{split[3]}_{split[4]}");
                 arucoTracks.Add(obj.gameObject.GetInstanceID(), track as AnimationTrack);
             }
         }
@@ -173,6 +175,8 @@ public class ArucoToTimeline : MonoBehaviour
                     if (track.hasClips == false)
                     {
                         clip = track.CreateClip(new AnimationClip());
+                        clip.displayName = track.name;
+                        
                         if (AssetDatabase.IsValidFolder($"Assets/Clips/{UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}") == false)
                             AssetDatabase.CreateFolder("Assets/Clips", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
