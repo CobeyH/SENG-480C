@@ -17,6 +17,7 @@ public class ArucoToTimeline : MonoBehaviour
     [SerializeField] private TimelineAsset timelineAsset;
 
     [SerializeField] private ArucoTrackDict arucoTracks;
+    [SerializeField] private double timestep = 1.0 / 60.0;
 
     private Dictionary<AnimationClip, TransformCurves> clipCurves;
 
@@ -99,7 +100,25 @@ public class ArucoToTimeline : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             InsertKeyframes();
+            TimelineEditor.Refresh(RefreshReason.ContentsModified);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            playableDirector.time -= timestep;
+            
+            if (playableDirector.time < 0)
+                playableDirector.time = 0;
+
+            TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            playableDirector.time += timestep;
+            TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
+        }
     }
 
     public void CreateTracks()
@@ -141,6 +160,8 @@ public class ArucoToTimeline : MonoBehaviour
                 arucoTracks.Add(obj.gameObject.GetInstanceID(), track as AnimationTrack);
             }
         }
+
+        TimelineEditor.Refresh(RefreshReason.ContentsAddedOrRemoved);
     }
 
     public void SetBindings()
@@ -159,6 +180,8 @@ public class ArucoToTimeline : MonoBehaviour
                 }
             }
         }
+
+        TimelineEditor.Refresh(RefreshReason.ContentsModified);
     }
 
     public void InsertKeyframes()
