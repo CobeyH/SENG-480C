@@ -75,7 +75,7 @@ class EditorInputListener
 
         string[] input = message.Split(',');
 
-        if (input.Length < 7)
+        if (input.Length < 3)
             return;
 
         motionListener.HandleEditorInput(input);

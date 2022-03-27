@@ -20,6 +20,8 @@ public class ArucoToTimeline : MonoBehaviour
     [SerializeField] private ArucoTrackDict arucoTracks;
     [SerializeField] private double timestep = 1.0 / 60.0;
 
+    [SerializeField] private ArduinoInput arduinoInput;
+
     private Dictionary<AnimationClip, TransformCurves> clipCurves;
 
     private void Reset()
@@ -61,11 +63,19 @@ public class ArucoToTimeline : MonoBehaviour
             playableDirector.time += timestep;
             TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
         }
+
+        if(arduinoInput.held)
+        {
+            UpdateTimeline(arduinoInput.ultrasonic_reading);
+        }
     }
 
     public void UpdateTimeline(float normalized_position)
     {
-        playableDirector.time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
+        double new_time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
+        Debug.Log($"Update timeline: {new_time} << {playableDirector.duration}, {normalized_position}");
+        playableDirector.time = new_time;
+        TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
     }
 
     public void CreateTracks()

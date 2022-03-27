@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6498,15 +6498,26 @@ MonoBehaviour:
   serialController: {fileID: 1123107753}
   potentiometer_scale: 1
   potentiometer_extents: {x: 0, y: 1023}
-  ultrasonic_deadzone: {x: 40, y: 60}
-  ultrasonic_extents: {x: 1, y: 99}
+  ultrasonic_extents: {x: 4, y: 47}
   capacitive_threshold: 0.5
   onCapacitivePress:
     m_PersistentCalls:
       m_Calls: []
   onCapacitiveRelease:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2082523162}
+        m_TargetAssemblyTypeName: ArucoToTimeline, Assembly-CSharp
+        m_MethodName: UpdateTimeline
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1123107753 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
@@ -6659,6 +6670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SerialController
       objectReference: {fileID: 0}
+    - target: {fileID: 128384, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 405068, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6709,7 +6724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: portName
-      value: /dev/cu.usbmodem14601
+      value: COM4
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: messageListener
@@ -9809,6 +9824,10 @@ PrefabInstance:
       propertyPath: cameraParametersFilename
       value: DroidCam Source 3 - 2022-03-26_15-06-49.xml
       objectReference: {fileID: 0}
+    - target: {fileID: 114393126318706844, guid: 74c9e29e9d222a4438669336303acc9a, type: 3}
+      propertyPath: webcamId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114522793529101426, guid: 74c9e29e9d222a4438669336303acc9a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -10279,7 +10298,7 @@ MonoBehaviour:
   playableDirector: {fileID: 2082523163}
   timelineAsset: {fileID: 11400000, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
   arucoTracks:
-    m_keys: 924000006e410000063f00007e3f0000b642000054420000d24100005441000076400000484100006641000040410000da410000683f0000dc42000034400000
+    m_keys: 924000006e410000063f00007e3f0000b642000054420000d24100005441000076400000484100006641000040410000da410000683f0000dc42000034400000b8400000a6410000243f00009e3f0000f6420000924200000c420000884100009a4000007a4100009c4100007041000016420000863f00001e43000056400000
     m_values:
     - {fileID: 0}
     - {fileID: 0}
@@ -10297,7 +10316,24 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: -1587521679541979178, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 4334036704459044669, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -6360328268377412566, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -951140450348127368, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 7384029244295727562, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -4531219988197825980, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 571257402928000621, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -3656643219866900526, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -8573229420659303397, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 1640410229066686048, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -6749410968547195767, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -1629334364399440370, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 7620680290588391602, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 4326908589887729423, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: -8766261911134489875, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    - {fileID: 2043207665678486824, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
   timestep: 0.016666666666666666
+  arduinoInput: {fileID: 1123107752}
 --- !u!320 &2082523163
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -10313,38 +10349,38 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 8007257105155784756, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 8042802200205640587, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -5792086877734959069, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -6746875552927755429, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 3381300114970467318, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -6319264837949774810, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -2211041780830316803, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 2533046874536843735, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 574881073310522820, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -4616396347542357750, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -6953964561583898196, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -8196635926516965158, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -4746152155268192113, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -8984793279237529123, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -7553637074213194145, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -7994332515379920594, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: -1587521679541979178, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 887812762}
+  - key: {fileID: 4334036704459044669, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1317892594}
+  - key: {fileID: -6360328268377412566, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 165575421}
+  - key: {fileID: -951140450348127368, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 435664674}
+  - key: {fileID: 7384029244295727562, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 2111134441}
+  - key: {fileID: -4531219988197825980, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1834445153}
+  - key: {fileID: 571257402928000621, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1560668699}
+  - key: {fileID: -3656643219866900526, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1256100467}
+  - key: {fileID: -8573229420659303397, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 850930962}
+  - key: {fileID: 1640410229066686048, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1249993775}
+  - key: {fileID: -6749410968547195767, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1309321947}
+  - key: {fileID: -1629334364399440370, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1245409067}
+  - key: {fileID: 7620680290588391602, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 1619882961}
+  - key: {fileID: 4326908589887729423, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 422904914}
+  - key: {fileID: -8766261911134489875, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 2134252182}
+  - key: {fileID: 2043207665678486824, guid: 67aa380356fabfb48b8f6e7650507b02, type: 2}
+    value: {fileID: 727633587}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &2082523164
