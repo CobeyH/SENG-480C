@@ -102,9 +102,9 @@ public class ArduinoInput : MonoBehaviour
             result = 0;
 
 
-        if(capactive_reading <= capacitive_threshold)
+        if(capactive_reading > capacitive_threshold)
         {
-            if (result > capacitive_threshold)
+            if (result < capacitive_threshold)
             {
                 onCapacitivePress.Invoke(ultrasonic_reading);
                 held = true;
@@ -112,7 +112,7 @@ public class ArduinoInput : MonoBehaviour
         }
         else
         {
-            if (result < capacitive_threshold)
+            if (result >= capacitive_threshold)
             {
                 onCapacitiveRelease.Invoke(ultrasonic_reading);
                 held = false;

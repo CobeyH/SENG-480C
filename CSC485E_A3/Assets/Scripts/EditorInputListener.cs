@@ -8,7 +8,7 @@ class EditorInputListener
 {
     static bool updating = false;
     public static SerialController serialController;
-    public static ArduinoInput motionListener;
+    public static ArduinoInput arduinoInput;
 
     static EditorInputListener()
     {
@@ -46,11 +46,11 @@ class EditorInputListener
                     }
                 }
 
-                if (motionListener == null)
+                if (arduinoInput == null)
                 {
-                    motionListener = Editor.FindObjectOfType<ArduinoInput>();
+                    arduinoInput = Editor.FindObjectOfType<ArduinoInput>();
 
-                    if(motionListener == null)
+                    if(arduinoInput == null)
                     {
                         Debug.LogError("MotionListener is not assigned");
                         return;
@@ -78,6 +78,6 @@ class EditorInputListener
         if (input.Length < 3)
             return;
 
-        motionListener.HandleEditorInput(input);
+        arduinoInput.HandleEditorInput(input);
     }
 }

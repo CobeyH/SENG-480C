@@ -1223,7 +1223,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237216543}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &241748885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,7 +6499,7 @@ MonoBehaviour:
   potentiometer_scale: 1
   potentiometer_extents: {x: 0, y: 1023}
   ultrasonic_extents: {x: 4, y: 47}
-  capacitive_threshold: 0.5
+  capacitive_threshold: 8000
   onCapacitivePress:
     m_PersistentCalls:
       m_Calls: []

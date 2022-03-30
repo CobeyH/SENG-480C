@@ -42,7 +42,7 @@ public class ArucoToTimeline : MonoBehaviour
     void Update()
     {
         //todo: replace with hardware button
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             InsertKeyframes();
             TimelineEditor.Refresh(RefreshReason.ContentsModified);
@@ -72,9 +72,9 @@ public class ArucoToTimeline : MonoBehaviour
 
     public void UpdateTimeline(float normalized_position)
     {
-        double new_time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
-        Debug.Log($"Update timeline: {new_time} << {playableDirector.duration}, {normalized_position}");
-        playableDirector.time = new_time;
+        //double new_time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
+        //Debug.Log($"Update timeline: {new_time} << {playableDirector.duration}, {normalized_position}");
+        playableDirector.time = playableDirector.duration * normalized_position;
         TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
     }
 
@@ -192,23 +192,23 @@ public class ArucoToTimeline : MonoBehaviour
         }
 
         //position
-        curves.px.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
+        curves.px.AddKey(new Keyframe(time, obj.gameObject.transform.position.x));
         clip.SetCurve(string.Empty, typeof(Transform), "localPosition.x", curves.px);
 
-        curves.py.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
-        clip.SetCurve(string.Empty, typeof(Transform), "localPosition.y", curves.py);
+        //curves.py.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
+        //clip.SetCurve(string.Empty, typeof(Transform), "localPosition.y", curves.py);
 
         curves.pz.AddKey(new Keyframe(time, obj.gameObject.transform.position.z));
         clip.SetCurve(string.Empty, typeof(Transform), "localPosition.z", curves.pz);
 
         //rotation
-        curves.rx.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
+        curves.rx.AddKey(new Keyframe(time, 0)); //obj.gameObject.transform.rotation.y));
         clip.SetCurve(string.Empty, typeof(Transform), "localRotation.x", curves.rx);
 
-        curves.ry.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
+        curves.ry.AddKey(new Keyframe(time, obj.gameObject.transform.rotation.y));
         clip.SetCurve(string.Empty, typeof(Transform), "localRotation.y", curves.ry);
 
-        curves.rz.AddKey(new Keyframe(time, obj.gameObject.transform.position.z));
+        curves.rz.AddKey(new Keyframe(time, 0)); //obj.gameObject.transform.rotation.z));
         clip.SetCurve(string.Empty, typeof(Transform), "localRotation.z", curves.rz);
     }
 
