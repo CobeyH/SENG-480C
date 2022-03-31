@@ -44,22 +44,46 @@ public struct TransformCurves
         }
 
         if (px == null)
+        {
             px = new AnimationCurve();
+            px.preWrapMode = WrapMode.Clamp;
+            px.postWrapMode = WrapMode.Clamp;
+        }
 
         if (py == null)
+        {
             py = new AnimationCurve();
+            py.preWrapMode = WrapMode.Clamp;
+            py.postWrapMode = WrapMode.Clamp;
+        }
 
         if (pz == null)
+        {
             pz = new AnimationCurve();
+            pz.preWrapMode = WrapMode.Clamp;
+            pz.postWrapMode = WrapMode.Clamp;
+        }
 
         if (rx == null)
+        {
             rx = new AnimationCurve();
+            rx.preWrapMode = WrapMode.Clamp;
+            rx.postWrapMode = WrapMode.Clamp;
+        }
 
         if (ry == null)
+        {
             ry = new AnimationCurve();
+            ry.preWrapMode = WrapMode.Clamp;
+            ry.postWrapMode = WrapMode.Clamp;
+        }
 
         if (rz == null)
+        {
             rz = new AnimationCurve();
+            rz.preWrapMode = WrapMode.Clamp;
+            rz.postWrapMode = WrapMode.Clamp;
+        }
     }
 }
 #endif

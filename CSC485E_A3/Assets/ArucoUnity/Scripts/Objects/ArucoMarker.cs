@@ -56,7 +56,7 @@ namespace ArucoUnity.Objects
 
         public override string GenerateName()
         {
-            return "Marker_" + Dictionary.Name + "_Id_" + MarkerId;
+            return $"Marker_{Dictionary.MarkerSize}x{Dictionary.MarkerSize}_Id_{MarkerId}";
         }
 
         public override Vector3 GetGameObjectScale()

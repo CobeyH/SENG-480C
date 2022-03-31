@@ -23,6 +23,7 @@ public class ArucoToTimeline : MonoBehaviour
     [SerializeField] private ArduinoInput arduinoInput;
 
     private Dictionary<AnimationClip, TransformCurves> clipCurves;
+    [SerializeField, HideInInspector] private double timeline_zero = 0.0000;
 
     private void Reset()
     {
@@ -42,10 +43,15 @@ public class ArucoToTimeline : MonoBehaviour
     void Update()
     {
         //todo: replace with hardware button
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             InsertKeyframes();
             TimelineEditor.Refresh(RefreshReason.ContentsModified);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            timeline_zero = playableDirector.time;
         }
 
         //todo: replace with ultrasonic
@@ -74,7 +80,8 @@ public class ArucoToTimeline : MonoBehaviour
     {
         //double new_time = (double)Mathf.InverseLerp(0, (float)playableDirector.duration, normalized_position);
         //Debug.Log($"Update timeline: {new_time} << {playableDirector.duration}, {normalized_position}");
-        playableDirector.time = playableDirector.duration * normalized_position;
+        
+        playableDirector.time = playableDirector.duration * normalized_position + timeline_zero;
         TimelineEditor.Refresh(RefreshReason.WindowNeedsRedraw);
     }
 
@@ -113,7 +120,7 @@ public class ArucoToTimeline : MonoBehaviour
             {
                 string[] split = obj.gameObject.name.Split('_');
             
-                track = timelineAsset.CreateTrack(typeof(AnimationTrack), null, $"{split[3]}_{split[4]}");
+                track = timelineAsset.CreateTrack(typeof(AnimationTrack), null, $"{split[2]}_{split[3]}");
                 arucoTracks.Add(obj.gameObject.GetInstanceID(), track as AnimationTrack);
             }
         }
@@ -191,25 +198,23 @@ public class ArucoToTimeline : MonoBehaviour
             clipCurves.Add(clip, curves);
         }
 
-        //position
-        curves.px.AddKey(new Keyframe(time, obj.gameObject.transform.position.x));
-        clip.SetCurve(string.Empty, typeof(Transform), "localPosition.x", curves.px);
+        UpdateClipCurve(clip, curves.px, "localPosition.x", time, obj.transform.localPosition.x);
+        UpdateClipCurve(clip, curves.pz, "localPosition.z", time, obj.transform.localPosition.z);
+        UpdateClipCurve(clip, curves.ry, "localRotation.y", time, obj.transform.localRotation.y);
+    }
 
-        //curves.py.AddKey(new Keyframe(time, obj.gameObject.transform.position.y));
-        //clip.SetCurve(string.Empty, typeof(Transform), "localPosition.y", curves.py);
+    private void UpdateClipCurve(AnimationClip clip, AnimationCurve curve, string property, float time, float value)
+    {
+        int index = curve.AddKey(new Keyframe(time, value));
+        if (index == 0 && time > 0)
+            curve.AddKey(new Keyframe(0, value));
+        else if (curve.keys[index - 1].value == curve.keys[index].value)
+        {
+            curve.RemoveKey(index);
+            return;
+        }
 
-        curves.pz.AddKey(new Keyframe(time, obj.gameObject.transform.position.z));
-        clip.SetCurve(string.Empty, typeof(Transform), "localPosition.z", curves.pz);
-
-        //rotation
-        curves.rx.AddKey(new Keyframe(time, 0)); //obj.gameObject.transform.rotation.y));
-        clip.SetCurve(string.Empty, typeof(Transform), "localRotation.x", curves.rx);
-
-        curves.ry.AddKey(new Keyframe(time, obj.gameObject.transform.rotation.y));
-        clip.SetCurve(string.Empty, typeof(Transform), "localRotation.y", curves.ry);
-
-        curves.rz.AddKey(new Keyframe(time, 0)); //obj.gameObject.transform.rotation.z));
-        clip.SetCurve(string.Empty, typeof(Transform), "localRotation.z", curves.rz);
+        clip.SetCurve(string.Empty, typeof(Transform), property, curve);
     }
 
 }

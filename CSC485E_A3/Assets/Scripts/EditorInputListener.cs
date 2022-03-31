@@ -23,7 +23,7 @@ class EditorInputListener
 
     static void EditorGlobalKeyPress()
     {
-        if(Event.current.keyCode == KeyCode.Space && Event.current.type == EventType.KeyDown)
+        if(Event.current.keyCode == KeyCode.I && Event.current.type == EventType.KeyDown)
         {
             if(updating)
             {
@@ -41,7 +41,7 @@ class EditorInputListener
 
                     if (serialController == null)
                     {
-                        Debug.LogError("SerialController is not assigned");
+                        Debug.LogError("SerialController is not assigned"); 
                         return;
                     }
                 }
